@@ -134,7 +134,7 @@ span{
     color: black;
     transform: scale(1.3) translateY(-5px);
     background-color: #b74b4b;
-    box-shadow: 0  0 25px #b74b4b;
+    box-shadow: 0 0 25px #b74b4b;
 }
 
 .btn{
@@ -227,7 +227,7 @@ span{
     text-align: center;
 }
 
-/* ===== Services Section ===== */
+/* ===== Services Section (Alternating Background: #111) ===== */
 .services {
     background-color: #111;
 }
@@ -272,7 +272,7 @@ span{
     box-shadow: 0 0 25px rgba(183, 75, 75, 0.6);
 }
 
-/* ===== Skills Section ===== */
+/* ===== Skills Section (Alternating Background: black) ===== */
 .skills {
     background-color: black;
 }
@@ -332,13 +332,57 @@ span{
     border-radius: 0.5rem;
 }
 
-/* ===== Education & Experience Section ===== */
-.education, .experience {
+/* ===== Certifications Section (Alternating Background: #111) ===== */
+.certifications {
     background-color: #111;
 }
 
-.experience {
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.cert-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    background-color: #1a1a1a;
+    color: white;
+    border: 2px solid #333;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    text-align: center;
+    max-width: 450px;
+}
+
+.cert-link i {
+    color: #b74b4b;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.cert-link:hover {
+    color: #b74b4b;
+    border: 2px solid #b74b4b;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(183, 75, 75, 0.4);
+    background-color: #161616;
+}
+
+
+/* ===== Education Section (Alternating Background: black) ===== */
+.education {
     background-color: black;
+}
+
+/* ===== Experience Section (Alternating Background: #111) ===== */
+.experience {
+    background-color: #111;
 }
 
 .timeline-container {
@@ -442,9 +486,9 @@ span{
     line-height: 1.6;
 }
 
-/* ===== Contact Section ===== */
+/* ===== Contact Section (Alternating Background: black) ===== */
 .contact {
-    background-color: #111;
+    background-color: black;
 }
 
 .contact-container {
@@ -558,6 +602,16 @@ span{
     .skills-container {
         grid-template-columns: 1fr;
     }
+    
+    .certifications-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cert-link {
+        width: 100%;
+        max-width: 400px;
+    }
 
     .timeline-container::after {
         left: 31px;
@@ -574,7 +628,7 @@ span{
         left: 0;
     }
 
-    .timeline-item::after {
+    .timeline-item:nth-child(even)::after {
         left: 15px;
     }
 }
