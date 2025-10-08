@@ -9,18 +9,19 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Prithviraj</a>
+        <a href="#home" class="logo">Prithviraj</a>
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#services">Services</a>
-            <a href="#skills">Skills</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
+        <nav id="navbar">
+            <a href="#home" class="active nav-link">Home</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#certifications" class="nav-link">Certifications</a>
+            <a href="#projects" class="nav-link">Projects</a> 
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
     </header>
 
@@ -165,8 +166,63 @@
                 <i class="fa-solid fa-laptop-code"></i>
                 HackerRank Certified Software Engineer
             </a>
+            <a href="https://courses.cognitiveclass.ai/certificates/a99271136b154dc8bc109d803dd7b26a" target="_blank" class="cert-link">
+                <i class="fa-solid fa-file-invoice"></i>
+                Prompt Engineering for Everyone (AI0117EN, IBM)
+            </a>
+            <a href="https://courses.cognitiveclass.ai/certificates/e6824b260b714751b001c43eff87c326" target="_blank" class="cert-link">
+                <i class="fa-solid fa-file-invoice"></i>
+                Python 101 for Data Science (PY0101EN, IBM)
+            </a>
         </div>
     </section>
+    
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="projects-container">
+            
+            <div class="project-box">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Fake News Classification (ML/NLP)</h3>
+                <p>
+                    A Machine Learning project using **Natural Language Processing (NLP)** techniques in Python (Scikit-learn) to train a model capable of classifying news articles as real or fake.
+                </p>
+                <a href="https://github.com/prithviraj1712/fake_news_classification" target="_blank" class="project-link">
+                    View Project 
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            
+            <div class="project-box">
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <h3>Sudoku Game & Master Solver</h3>
+                <p>
+                    An interactive Sudoku application that includes both a playable game and a robust **Backtracking Algorithm** implementation to solve any valid puzzle, showcasing algorithmic proficiency.
+                </p>
+                <a href="https://github.com/prithviraj1712/soduku-master-solver" target="_blank" class="project-link">
+                    View Project 
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            
+            <div class="project-box">
+                <i class="fa-solid fa-gamepad"></i>
+                <h3>Interactive Bingo Game</h3>
+                <p>
+                    A fully functional, web-based version of the classic Bingo game developed using pure **JavaScript, HTML, and CSS**. Features include random number generation and automatic win detection.
+                </p>
+                <a href="https://github.com/prithviraj1712/Bingooo" target="_blank" class="project-link">
+                    View Project 
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            
+        </div>
+        <div class="view-all">
+            <a href="https://github.com/prithviraj1712?tab=repositories" target="_blank" class="btn">View All Repositories</a>
+        </div>
+    </section>
+    
     <section class="education" id="education">
         <h2 class="heading">My <span>Education</span></h2>
         <div class="timeline-container">
@@ -260,4 +316,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
